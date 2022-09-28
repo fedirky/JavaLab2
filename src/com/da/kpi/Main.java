@@ -1,7 +1,8 @@
 package com.da.kpi;
 
+import com.da.kpi.car.Car;
+
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {

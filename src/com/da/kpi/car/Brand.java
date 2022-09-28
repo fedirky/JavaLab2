@@ -1,4 +1,4 @@
-package com.da.kpi;
+package com.da.kpi.car;
 
 public enum Brand {
 	FORD,

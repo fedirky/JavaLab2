@@ -1,4 +1,4 @@
-package com.da.kpi;
+package com.da.kpi.car;
 
 import java.util.concurrent.ThreadLocalRandom;
 
@@ -56,5 +56,7 @@ public class Car {
 		float priceMin = 10000,
 				priceMax = 1000000;
 		this.price = ThreadLocalRandom.current().nextFloat(priceMin, priceMax);
+
+
 	}
 }
