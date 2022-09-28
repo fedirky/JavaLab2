@@ -1,13 +1,10 @@
 package com.da.kpi;
 
 import com.da.kpi.car.Car;
-import com.da.kpi.car.Model;
 
 import java.util.Scanner;
 import java.util.Hashtable;
 import java.util.Set;
-import java.util.Iterator;
-import java.util.concurrent.ThreadLocalRandom;
 
 public class Main {
 	public static void main(String[] args) {
