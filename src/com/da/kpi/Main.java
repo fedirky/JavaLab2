@@ -31,11 +31,8 @@ public class Main {
 
 		//constructor test, need to be commented
 		Set<Integer> setOfKeys = garage.keySet();
-		Iterator<Integer> iterator = setOfKeys.iterator();
 
-		while(iterator.hasNext()) {
-			int key = iterator.next();
-
+		for (int key : setOfKeys) {
 			garage.get(key).printFullInfo();
 		}
 	}
