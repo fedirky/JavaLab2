@@ -19,9 +19,8 @@ public class Car {
 	public float getPrice() { return price; }
 	public int getRegNumber() { return regNumber; }
 
-
 	public String toString() {
-		String info = new String();
+		/*String info = new String();
 
 		info = "ID: " + id +
 				"\nBrand: " + brand +
@@ -29,9 +28,15 @@ public class Car {
 				"\nYear: " + year +
 				"\nColor: " + color +
 				"\nPrice: " + price +
-				"\nRegistration Number: " + regNumber;
+				"\nRegistration Number: " + regNumber;*/
 
-		return info;
+		return new String("ID: " + id +
+				"\nBrand: " + brand +
+				"\nModel: " + model +
+				"\nYear: " + year +
+				"\nColor: " + color +
+				"\nPrice: " + price +
+				"\nRegistration Number: " + regNumber);
 	}
 
 	public Car() {

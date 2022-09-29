@@ -2,8 +2,9 @@ package com.da.kpi;
 
 import com.da.kpi.car.Car;
 
+import java.lang.reflect.Array;
 import java.util.Scanner;
-import java.util.Hashtable;
+import java.util.ArrayList;
 import java.util.Set;
 
 public class Main {
@@ -15,21 +16,15 @@ public class Main {
 
 		int numOfCars = in.nextInt();
 
-		Hashtable<Integer, Car> garage = new Hashtable<Integer, Car>();
+		ArrayList<Car> garage = new ArrayList<Car>();
 
 		for(int i = 0; i < numOfCars; i++) {
-			Car newCar = new Car();
-
-			if(garage.put(newCar.getRegNumber(), newCar) != null) {
-				System.out.println("This registration number: " +
-						newCar.getRegNumber() + " is already used.");
-			}
+			garage.add(new Car());
 		}
-		//constructor test, need to be commented
-		Set<Integer> setOfKeys = garage.keySet();
 
-		for (int key : setOfKeys) {
-			System.out.println(garage.get(key).toString());
+		//constructor test, need to be commented
+		for (Car currentCar : garage) {
+			System.out.println(currentCar.toString());
 		}
 	}
 }
