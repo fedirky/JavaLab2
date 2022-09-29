@@ -2,10 +2,8 @@ package com.da.kpi;
 
 import com.da.kpi.car.Car;
 
-import java.lang.reflect.Array;
 import java.util.Scanner;
 import java.util.ArrayList;
-import java.util.Set;
 
 public class Main {
 	public static void main(String[] args) {
