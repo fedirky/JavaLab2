@@ -25,12 +25,11 @@ public class Main {
 						newCar.getRegNumber() + " is already used.");
 			}
 		}
-
 		//constructor test, need to be commented
 		Set<Integer> setOfKeys = garage.keySet();
 
 		for (int key : setOfKeys) {
-			garage.get(key).printFullInfo();
+			System.out.println(garage.get(key).toString());
 		}
 	}
 }

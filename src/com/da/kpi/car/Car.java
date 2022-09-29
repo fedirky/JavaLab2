@@ -3,7 +3,7 @@ package com.da.kpi.car;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Car {
-	/*private int id;*/
+	private int id;
 	private Brand brand;
 	private Model model;
 	private int year;
@@ -11,7 +11,7 @@ public class Car {
 	private float price;
 	private int regNumber;
 
-	/*public int getId() { return id; }*/
+	public int getId() { return id; }
 	public Brand getBrand() { return brand; }
 	public Model getModel() { return model; }
 	public int getYear() { return year; }
@@ -19,18 +19,19 @@ public class Car {
 	public float getPrice() { return price; }
 	public int getRegNumber() { return regNumber; }
 
-	public void printFullInfo() {
-		System.out.println("===================================");
 
-		System.out.println(/*"ID: " + id +
-				"\n*/"Brand: " + brand +
+	public String toString() {
+		String info = new String();
+
+		info = "ID: " + id +
+				"\nBrand: " + brand +
 				"\nModel: " + model +
 				"\nYear: " + year +
 				"\nColor: " + color +
 				"\nPrice: " + price +
-				"\nRegistration Number: " + regNumber);
+				"\nRegistration Number: " + regNumber;
 
-		System.out.println("===================================");
+		return info;
 	}
 
 	public Car() {
