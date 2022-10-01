@@ -19,6 +19,7 @@ public class Car {
 	public float getPrice() { return price; }
 	public int getRegNumber() { return regNumber; }
 
+
 	public String toString() {
 		/*String info = new String();
 
@@ -36,7 +37,7 @@ public class Car {
 				"\nYear: " + year +
 				"\nColor: " + color +
 				"\nPrice: " + price +
-				"\nRegistration Number: " + regNumber);
+				"\nRegistration Number: " + regNumber + "\n\n");
 	}
 
 	public Car() {
