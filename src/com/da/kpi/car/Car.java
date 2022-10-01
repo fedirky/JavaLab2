@@ -3,6 +3,7 @@ package com.da.kpi.car;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class Car {
+	private static int nextNewCarId = 1;
 	private int id;
 	private Brand brand;
 	private Model model;
@@ -19,32 +20,20 @@ public class Car {
 	public float getPrice() { return price; }
 	public int getRegNumber() { return regNumber; }
 
-
+	@Override
 	public String toString() {
-		/*String info = new String();
-
-		info = "ID: " + id +
-				"\nBrand: " + brand +
-				"\nModel: " + model +
-				"\nYear: " + year +
-				"\nColor: " + color +
-				"\nPrice: " + price +
-				"\nRegistration Number: " + regNumber;*/
-
-		return new String("ID: " + id +
-				"\nBrand: " + brand +
-				"\nModel: " + model +
-				"\nYear: " + year +
-				"\nColor: " + color +
-				"\nPrice: " + price +
-				"\nRegistration Number: " + regNumber + "\n\n");
+		return "ID: " + id +
+			   "\nBrand: " + brand +
+			   "\nModel: " + model +
+			   "\nYear: " + year +
+			   "\nColor: " + color +
+			   "\nPrice: " + price +
+			   "\nRegistration Number: " + regNumber;
 	}
 
 	public Car() {
 
-		/*int idMin = 1000,
-				idMax = 100000;
-		id = ThreadLocalRandom.current().nextInt(idMin,idMax);*/
+		id = nextNewCarId++;
 
 		brand = Brand.values()[ThreadLocalRandom.current().
 				nextInt(0, Brand.values().length)];
