@@ -31,12 +31,12 @@ public class Car {
 				"\nRegistration Number: " + regNumber;*/
 
 		return new String("ID: " + id +
-				"\nBrand: " + brand +
-				"\nModel: " + model +
-				"\nYear: " + year +
-				"\nColor: " + color +
-				"\nPrice: " + price +
-				"\nRegistration Number: " + regNumber);
+                	"\nBrand: " + brand +
+                	"\nModel: " + model +
+                	"\nYear: " + year +
+                	"\nColor: " + color +
+                	"\nPrice: " + price +
+                	"\nRegistration Number: " + regNumber + "\n\n");
 	}
 
 	public Car() {
