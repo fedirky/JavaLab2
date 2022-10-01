@@ -57,25 +57,25 @@ public class Main {
 
 
 				Model In = null;
-				functionNumber = in.next().charAt(0);
+				functionNumber = in.nextInt();
 
-				if (Objects.equals(functionNumber, '1')) {
+				if (Objects.equals(functionNumber, 1)) {
 					In = Model.SEDAN;
-				} else if (Objects.equals(functionNumber, '2')) {
+				} else if (Objects.equals(functionNumber, 2)) {
 					In = Model.HATCHBACK;
-				} else if (Objects.equals(functionNumber, '3')) {
+				} else if (Objects.equals(functionNumber, 3)) {
 					In = Model.ROADSTER;
-				} else if (Objects.equals(functionNumber, '4')) {
+				} else if (Objects.equals(functionNumber, 4)) {
 					In = Model.PICKUP;
-				} else if (Objects.equals(functionNumber, '5')) {
+				} else if (Objects.equals(functionNumber, 5)) {
 					In = Model.MICRO;
-				} else if (Objects.equals(functionNumber, '6')) {
+				} else if (Objects.equals(functionNumber, 6)) {
 					In = Model.CABRIOLET;
-				} else if (Objects.equals(functionNumber, '7')) {
+				} else if (Objects.equals(functionNumber, 7)) {
 					In = Model.SUPERCAR;
-				} else if (Objects.equals(functionNumber, '8')) {
+				} else if (Objects.equals(functionNumber, 8)) {
 					In = Model.VAN;
-				} else if (Objects.equals(functionNumber, '9')) {
+				} else if (Objects.equals(functionNumber, 9)) {
 					In = Model.TRUCK;
 				}
 
@@ -92,7 +92,7 @@ public class Main {
 				float price = in.nextFloat();
 
 				System.out.println("You entered year " + year +
-								   " and price " + price);
+						" and price " + price);
 
 				filteredArray = Filter.FilterC(garage, year, price);
 				break;
